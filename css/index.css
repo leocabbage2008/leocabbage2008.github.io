@@ -1,0 +1,53 @@
+@import url('https://fontcity.neocities.org/colortubepro.css?family=colortube+pro');
+html {
+  height: 100%;
+}
+* {
+}
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  background-image: url('../media/chains.png');
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  cursor: url('http://www.rw-designer.com/cursor-view/55125.png') 12 12, auto;
+}
+#main {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  flex-direction: column;
+}
+#main a,
+p {
+  color: white;
+}
+#main p {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'colortube pro';
+}
+#main a {
+  text-decoration: none;
+  transition: 0.1s;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+#main a:hover {
+  color: rgb(248, 103, 30);
+  cursor: url('http://www.rw-designer.com/cursor-view/55126.png') 24 24, auto;
+}
+@keyframes glow {
+  from {
+    text-shadow: 17px 17px 15px #c93803, 3px 3px 10px #ccc, 3px -3px 10px #ccc;
+  }
+  to {
+    text-shadow: 5px 5px 15px #ff752f;
+  }
+}
